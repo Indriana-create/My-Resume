@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Indriana Noviyanti — Team Lead, AI Engineer | CV</title>
+<meta name="description" content="Indriana Noviyanti — Team Lead, AI Engineer. System Engineering, Product Manager and AI Training. Jakarta, Indonesia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0a0f1f; --ink-2:#141b33; --text:#1a2138; --text-2:#3b4560; --muted:#6a7389;
+  --line:#e3e7f0; --bg:#f3f5fa; --card:#ffffff;
+  --accent:#4f46e5; --accent-2:#0891b2; --amber:#d97706; --green:#059669; --red:#dc2626;
+  --grad:linear-gradient(135deg,#6366f1 0%,#22d3ee 100%);
+  --radius:18px; --shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px -12px rgba(16,24,40,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:var(--bg);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.serif{font-family:"Fraunces",Georgia,"Times New Roman",serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+svg.i{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(243,245,250,.82);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:20px;height:64px}
+.mark{display:grid;place-items:center;width:36px;height:36px;border-radius:11px;background:var(--ink);color:#fff;font-weight:800;font-size:13px;letter-spacing:.04em}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;font-size:14px}
+.brand small{display:block;font-weight:500;color:var(--muted);font-size:11.5px;margin-top:-2px}
+.nav{margin-left:auto;display:flex;gap:4px}
+.nav a{padding:7px 12px;border-radius:999px;font-size:13px;font-weight:600;color:var(--muted);transition:.2s}
+.nav a:hover{color:var(--ink);background:#e9ecf5}
+.nav a.on{color:#fff;background:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;font-weight:700;font-size:13px;border:1px solid transparent;cursor:pointer;transition:.2s;font-family:inherit}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:var(--accent)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.22)}.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:#e0e7ff}
+
+/* ---------- hero ---------- */
+.hero{margin-top:22px;border-radius:28px;color:#fff;position:relative;overflow:hidden;
+  background:radial-gradient(900px 420px at 88% -12%,rgba(99,102,241,.65),transparent 62%),radial-gradient(700px 380px at -6% 112%,rgba(34,211,238,.32),transparent 60%),var(--ink)}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:44px 44px;-webkit-mask-image:radial-gradient(ellipse at 70% 20%,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse at 70% 20%,#000 10%,transparent 70%)}
+.hero-in{position:relative;display:grid;grid-template-columns:1.25fr .9fr;gap:36px;padding:52px 52px 48px}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:7px 14px 7px 12px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);font-size:12px;font-weight:600;letter-spacing:.01em}
+.dot{width:8px;height:8px;border-radius:50%;background:#34d399;box-shadow:0 0 0 0 rgba(52,211,153,.7);animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(52,211,153,0)}100%{box-shadow:0 0 0 0 rgba(52,211,153,0)}}
+h1.name{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:clamp(46px,6.2vw,76px);line-height:.98;letter-spacing:-.025em;margin:22px 0 14px}
+h1.name span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:22px;font-weight:700;letter-spacing:-.01em}
+.tag{color:#b9c2dc;margin-top:6px;font-size:15px;max-width:520px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:8px 13px;border-radius:12px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);font-size:13px;color:#e6eaf8;font-weight:500}
+.chip svg{color:#7dd3fc}
+.ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.glass{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:22px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.snap{padding:24px}
+.snap h3{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#aeb8d6;font-weight:700}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.stat{padding:16px;border-radius:16px;background:rgba(10,15,31,.45);border:1px solid rgba(255,255,255,.1)}
+.stat b{display:block;font-family:"Fraunces",Georgia,serif;font-size:38px;line-height:1;letter-spacing:-.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{display:block;margin-top:8px;font-size:12.5px;font-weight:700;color:#fff}
+.stat em{display:block;font-style:normal;font-size:11.5px;color:#a3aed0;margin-top:1px}
+.pivot{margin-top:14px;padding:13px 16px;display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#dbe3ff}
+.pivot i{font-style:normal;color:#22d3ee}
+
+/* ---------- layout ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;margin:28px 0 56px;align-items:start}
+section{scroll-margin-top:84px}
+.sec{margin-bottom:34px}
+.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.sec-h .n{font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--accent);background:#eef0ff;padding:5px 9px;border-radius:8px}
+.sec-h h2{font-family:"Fraunces",Georgia,serif;font-size:27px;letter-spacing:-.02em;line-height:1.1;color:var(--ink)}
+.sec-h::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.pad{padding:24px}
+
+/* ---------- summary ---------- */
+.lead{font-size:19px;line-height:1.55;font-weight:600;color:var(--ink);letter-spacing:-.005em}
+.lead mark{background:linear-gradient(transparent 62%,#c7d2fe 62%);color:inherit;padding:0 2px;font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px;color:var(--text-2);font-size:14.5px}
+.two p+p{margin-top:12px}
+.two b{color:var(--ink)}
+
+/* ---------- timeline ---------- */
+.tl{display:grid;gap:18px}
+.job{display:grid;grid-template-columns:50px minmax(0,1fr);gap:16px}
+.logo{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;color:#fff;font-weight:800;font-size:14px;letter-spacing:.03em;box-shadow:0 8px 18px -8px currentColor}
+.job .card{padding:22px 24px}
+.job-h{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.job-h h3{font-size:18px;letter-spacing:-.01em;color:var(--ink);line-height:1.25}
+.sub{font-size:13px;color:var(--muted);margin-top:3px}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.04em;background:#eef0ff;color:var(--accent);white-space:nowrap}
+.badge.dark{background:var(--ink);color:#fff}
+.badge.amber{background:#fef3c7;color:#92400e}
+.badge.green{background:#d1fae5;color:#065f46}
+.when{font-size:12px;font-weight:700;color:var(--muted);background:#f1f3f9;padding:4px 10px;border-radius:8px;white-space:nowrap}
+.role-blk{margin-top:16px;padding:16px 18px;border-radius:14px;background:#f8f9fd;border-left:3px solid var(--accent)}
+.role-blk.alt{border-left-color:#a5b4fc}
+.role-h{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:baseline}
+.role-h b{font-size:14.5px;color:var(--ink)}
+.role-h b em{font-style:normal;color:var(--accent)}
+ul.b{list-style:none;margin-top:10px;display:grid;gap:8px}
+ul.b li{position:relative;padding-left:20px;font-size:14px;color:var(--text-2);line-height:1.55}
+ul.b li::before{content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--grad);transform:rotate(45deg)}
+ul.b li strong{color:var(--ink)}
+
+.earlier{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mini{padding:16px 18px;border-radius:16px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}
+.mini h4{font-size:14px;color:var(--ink);line-height:1.3}
+.mini .sub{margin-top:2px}
+.mini p{font-size:13px;color:var(--text-2);margin-top:8px}
+.mini.wide{grid-column:1/-1}
+.foundation{grid-column:1/-1;background:linear-gradient(135deg,#0a0f1f,#1e2a57);color:#e8ecfb;border:none}
+.foundation h4{color:#fff;font-size:16px}
+.foundation .sub{color:#a9b3d6}
+.foundation ul.b li{color:#d3daf2}
+.foundation ul.b li::before{background:#22d3ee}
+
+/* ---------- projects / publication ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.proj{padding:18px 20px}
+.proj h4{font-size:15.5px;color:var(--ink);display:flex;align-items:center;gap:9px}
+.proj h4 i{width:9px;height:9px;border-radius:3px;background:var(--grad);display:inline-block}
+.proj .where{font-size:12px;color:var(--muted);font-weight:600;margin:2px 0 8px}
+.proj p{font-size:13.5px;color:var(--text-2)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{font-size:11px;font-weight:700;padding:3px 9px;border-radius:7px;background:#f1f3f9;color:var(--text-2)}
+.award{display:flex;gap:16px;align-items:center;padding:18px 22px;margin-top:14px;background:linear-gradient(135deg,#fffbeb,#fef3c7);border-color:#fde68a}
+.award .ic{width:46px;height:46px;border-radius:14px;background:#f59e0b;color:#fff;display:grid;place-items:center;font-size:22px;flex:none}
+.award b{display:block;color:#78350f;font-size:15px}
+.award span{font-size:13px;color:#92400e}
+.pub{position:relative;overflow:hidden;color:#e8ecfb;border-radius:var(--radius);padding:28px;
+  background:radial-gradient(520px 260px at 100% 0,rgba(99,102,241,.55),transparent 65%),radial-gradient(420px 240px at 0 120%,rgba(34,211,238,.25),transparent 60%),var(--ink);box-shadow:var(--shadow)}
+.pub .kicker{font-size:11px;letter-spacing:.2em;font-weight:800;text-transform:uppercase;color:#7dd3fc;display:flex;align-items:center;gap:8px}
+.pub h3{font-family:"Fraunces",Georgia,serif;font-size:24px;line-height:1.22;letter-spacing:-.015em;color:#fff;margin:12px 0 10px}
+.pub .meta{font-size:13px;color:#aab4d6}
+.pub .meta b{color:#fff}
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0 18px}
+.metric{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13)}
+.metric b{display:block;font-family:"Fraunces",Georgia,serif;font-size:30px;line-height:1;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.metric span{display:block;font-size:12px;color:#c9d1ec;margin-top:6px;line-height:1.4}
+.pub .abs{font-size:13.5px;color:#c4cce6;max-width:70ch}
+.pub .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px;align-items:center}
+.doi{font-size:12px;color:#9fb0e0}
+
+/* ---------- sidebar ---------- */
+aside .card{padding:22px;margin-bottom:18px}
+aside h3.t{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+aside h3.t svg{color:var(--accent)}
+.focus{display:grid;gap:12px}
+.focus div{display:flex;gap:12px;font-size:13.5px;color:var(--text-2)}
+.focus .ic{width:30px;height:30px;border-radius:10px;background:#eef0ff;color:var(--accent);display:grid;place-items:center;flex:none;font-size:15px}
+.focus b{color:var(--ink)}
+.edu{padding:14px 0;border-top:1px solid var(--line)}
+.edu:first-of-type{border-top:0;padding-top:0}
+.edu h4{font-size:14px;color:var(--ink);line-height:1.35}
+.edu .sub{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:5px}
+.edu p{font-size:12.5px;color:var(--text-2);margin-top:7px}
+.cert{display:flex;gap:12px;padding:11px 0;border-top:1px solid var(--line);align-items:flex-start}
+.cert:first-of-type{border-top:0;padding-top:0}
+.cert .ic{width:30px;height:30px;border-radius:10px;background:#f1f3f9;color:var(--muted);display:grid;place-items:center;flex:none;font-size:14px}
+.cert.hl .ic{background:var(--accent);color:#fff}
+.cert b{display:block;font-size:13px;color:var(--ink);line-height:1.35}
+.cert small{font-size:11.5px;color:var(--muted)}
+.more{margin-top:10px;padding:11px 14px;border:1px dashed #c7cde0;border-radius:12px;font-size:12.5px;color:var(--text-2)}
+.more a{color:var(--accent);font-weight:700}
+.skgroup+.skgroup{margin-top:16px}
+.skgroup h5{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:8px}
+.sk{display:flex;flex-wrap:wrap;gap:6px}
+.sk span{font-size:12px;font-weight:600;padding:5px 10px;border-radius:999px;background:#f1f3f9;border:1px solid var(--line);color:var(--text)}
+.sk span.hot{background:#eef0ff;border-color:#c7d2fe;color:#3730a3}
+.contact{background:linear-gradient(160deg,#0a0f1f,#1b2552);color:#e8ecfb;border:none}
+.contact h3.t{color:#9aa6cf}.contact h3.t svg{color:#22d3ee}
+.contact .nm{font-family:"Fraunces",Georgia,serif;font-size:22px;color:#fff;line-height:1.15}
+.contact .rl{font-size:13px;color:#a9b3d6;margin-top:2px}
+.contact ul{list-style:none;margin-top:16px;display:grid;gap:11px;font-size:13.5px}
+.contact li{display:flex;gap:11px;align-items:center}
+.contact li svg{color:#22d3ee}
+.contact li a:hover{color:#7dd3fc}
+.arc{font-size:13px;color:var(--text-2);line-height:1.65}
+.arc b{color:var(--ink)}
+.steps{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.steps span{font-size:11.5px;font-weight:700;padding:4px 9px;border-radius:8px;background:#f1f3f9;color:var(--text-2)}
+.steps span.end{background:var(--ink);color:#fff}
+
+footer{border-top:1px solid var(--line);padding:26px 0 44px;color:var(--muted);font-size:12.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer .open{display:flex;align-items:center;gap:8px;font-weight:600;color:var(--text-2)}
+
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr}
+  .hero-in{grid-template-columns:1fr;padding:38px 28px}
+  .nav{display:none}.topbar .btn{margin-left:auto}
+}
+@media (max-width:680px){
+  .wrap{padding:0 16px}
+  .two,.grid2,.earlier,.metrics{grid-template-columns:1fr}
+  .job{grid-template-columns:1fr}.logo{width:42px;height:42px;border-radius:12px;font-size:12px}
+  .job .card{padding:18px}
+  h1.name{font-size:46px}
+}
+.hero-in>*,.layout>*,.job>*,.stats>*,.grid2>*,.earlier>*,.two>*,.metrics>*{min-width:0}
+.chip,.cert b,.contact li,.sub,.pub h3,.pub .meta,.doi{overflow-wrap:anywhere}
+@media (max-width:680px){
+  .hero-in{padding:28px 20px 26px}
+  .snap{padding:18px}.stat b{font-size:32px}
+  .pivot{flex-wrap:wrap;font-size:11px}
+  .pub{padding:20px}.pub h3{font-size:20px}
+  .sec-h h2{font-size:23px}
+  .role-blk{padding:14px}
+  .when{white-space:normal}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+a:focus-visible,.btn:focus-visible{outline:3px solid #818cf8;outline-offset:2px}
+
+/* ---------- print (A4) ---------- */
+@page{size:A4;margin:11mm}
+@media print{
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{background:#fff;zoom:.68}
+  .topbar,.btn-print,.ctas,.nav,.dot{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .hero{margin-top:0}
+  .hero-in{padding:36px 38px;gap:26px}
+  h1.name{font-size:58px;margin:16px 0 10px}
+  .glass{backdrop-filter:none;-webkit-backdrop-filter:none}
+  .layout{grid-template-columns:minmax(0,1fr) 300px;gap:22px;margin:22px 0 0}
+  .card,.mini,.pub,.job,.role-blk,.proj,.award{break-inside:avoid;box-shadow:none}
+  aside .card{break-inside:avoid}
+  .sec{margin-bottom:22px}
+  footer{padding:16px 0 0}
+}</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="M22 7l-10 6L2 7"/></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M7 17L17 7M8 7h9v9"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M8.2 13.9L7 22l5-3 5 3-1.2-8.1"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2.1 5.9L20 11l-5.9 2.1L12 19l-2.1-5.9L4 11l5.9-2.1z"/></symbol>
+  <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="mark">IN</span><span>Indriana Noviyanti<small>Team Lead · AI Engineer</small></span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#summary">Summary</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#publication">Publication</a><a href="#education">Education</a><a href="#skills">Skills</a>
+    </nav>
+    <button class="btn btn-dark btn-print" onclick="window.print()"><svg class="i"><use href="#i-print"/></svg>Save as PDF</button>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="hero-in">
+      <div>
+        <span class="pill"><span class="dot"></span>Open to Team Lead / AI Product Leadership roles</span>
+        <h1 class="name">Indriana <span>Noviyanti</span></h1>
+        <p class="role">Team Lead – AI Engineer</p>
+        <p class="tag">Product Manager &amp; AI Trainer · Building Local AI platforms and computer vision — for manufacturing.</p>
+        <div class="chips">
+          <span class="chip"><svg class="i"><use href="#i-pin"/></svg>Jakarta, Indonesia</span>
+          <a class="chip" href="mailto:indriananoviyanti672@gmail.com"><svg class="i"><use href="#i-mail"/></svg>indriananoviyanti672@gmail.com</a>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-light" href="mailto:indriananoviyanti672@gmail.com"><svg class="i"><use href="#i-mail"/></svg>Get in touch</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/indriana-noviyanti/" target="_blank" rel="noopener"><svg class="i"><use href="#i-in"/></svg>LinkedIn</a>
+          <a class="btn btn-ghost" href="#publication"><svg class="i"><use href="#i-spark"/></svg>IEEE paper</a>
+        </div>
+      </div>
+      <div>
+        <div class="glass snap">
+          <h3>Leadership snapshot</h3>
+          <div class="stats">
+            <div class="stat"><b>5</b><span>Team members led</span><em>TMMIN AI projects</em></div>
+            <div class="stat"><b>5–10</b><span>Real speakers</span><em>of 500+ target · IDSpeaker</em></div>
+            <div class="stat"><b>IEEE</b><span>Published · First author</span><em>ICoSEIT 2025 · LLM scam detection</em></div>
+            <div class="stat"><b>3.59</b><span>GPA · Cum Laude</span><em>Informatics, Tel-U</em></div>
+          </div>
+        </div>
+        <div class="glass pivot"><svg class="i"><use href="#i-award"/></svg>Career pivot <i>·</i> Nurse (Japan) <i>→</i> AI Team Lead</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+  <div class="col-main">
+
+    <!-- ============ SUMMARY ============ -->
+    <section class="sec" id="summary">
+      <div class="sec-h"><span class="n">01</span><h2>Professional Summary</h2></div>
+      <div class="card pad">
+        <p class="lead">AI Engineer <mark>Team Lead</mark> with proven experience leading system engineering teams at Toyota Motor Manufacturing Indonesia, driving Product Management and AI Training at IDSpeaker.com (5–10 speakers), and previously Research Assistant at CoE AILO Telkom University.</p>
+        <div class="two">
+          <div>
+            <p>I lead with a builder-operator mindset. At <b>TMMIN as System Engineer Team Lead</b>, I lead a 5-member cross-functional team, coordinate FID-TMMIN delivery, and own system engineering standards for manufacturing AI systems. This is layered on 11 months as Project Manager (outsourced via ITEKRAF) — giving me end-to-end view from scoping to rollout.</p>
+            <p>At <b>IDSpeaker.com</b>, I act as Product Manager leading engineers, defining product development, curriculum material, client communication, proposal writing, and training scheme design. In parallel as <b>AI Instructor (Freelance)</b>, I deliver corporate AI training and mentoring.</p>
+          </div>
+          <div>
+            <p>Background is intentionally non-linear: <b>Nurse in Okayama Prefecture, Japan (Tenjinkai, 3y 5m, 80 patients daily)</b> — responsible, precise, high-stakes care — pivot to <b>Informatics, Telkom University, Cum Laude 3.59</b>. That pivot taught me systems thinking under pressure, empathy-driven product design, and disciplined execution.</p>
+            <p><b>Core expertise:</b> LLM · Generative AI · System Engineering · Product Development · Corporate Training · Managerial Leadership · TensorFlow · Project Management · Teaching · Japanese · Customer Service Excellence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="sec" id="experience">
+      <div class="sec-h"><span class="n">02</span><h2>Experience</h2></div>
+      <div class="tl">
+
+        <!-- TMMIN -->
+        <article class="job">
+          <div class="logo" style="background:#eb0a1e;color:#eb0a1e"><span style="color:#fff">TM</span></div>
+          <div class="card">
+            <div class="job-h">
+              <div>
+                <h3>Toyota Motor Manufacturing Indonesia</h3>
+                <p class="sub">Fujitsu Indonesia (FID) · Outsourced via ITEKRAF (Jul 2025 – May 2026) and PT Lumicore Sinergi Awan (May 2026 – Present) · Manufacturing Systems</p>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="badge dark">TEAM LEAD</span><span class="badge">Contract 1Y 4M · Jakarta Utara</span></div>
+            </div>
+
+            <div class="role-blk">
+              <div class="role-h"><b>AI Engineer (Outsourced) — <em>System Engineer Team Lead</em></b><span class="when">May 2026 – Present · 7 months</span></div>
+              <ul class="b">
+                <li><strong>Team Lead – AI Engineer (System Engineer):</strong> Leading a 5-member cross-functional team and serving as Tech Lead for 3–4 concurrent projects; setting sprint goals, code reviews, architecture decisions, and delivery accountability.</li>
+                <li><strong>FID-TMMIN Coordination:</strong> Liaison between Fujitsu Indonesia (FID) and TMMIN stakeholders; translating manufacturing requirements into system specs, managing dependencies, risk, and timeline.</li>
+                <li>Own system engineering lifecycle: requirements, design docs, implementation oversight, testing strategy, and production handover for internal manufacturing tools.</li>
+                <li><strong>TMMIN Local AI:</strong> Team Lead and AI/System Engineer for the on-premise Local AI platform (vLLM model serving, Open WebUI, and n8n workflow automation), covering testing scenarios and role-based access design.</li>
+                <li><strong>TMMIN CCTV AI:</strong> Team Lead and AI/System Engineer for AI-based CCTV computer vision covering safety PPE detection, pedestrian detection, and people counting.</li>
+              </ul>
+            </div>
+
+            <div class="role-blk alt">
+              <div class="role-h"><b>Project Manager (Outsourced from ITEKRAF)</b><span class="when">Jul 2025 – May 2026 · 11 months</span></div>
+              <ul class="b">
+                <li>Managed a portfolio of 3–4 parallel projects at TMMIN (AI/ML, Security Awareness, Helpdesk Query Knowledge-base) and led a cross-functional team of around 20 members.</li>
+                <li>Foundation for promotion to Team Lead role — demonstrated leadership, delivery discipline, and technical judgment.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lumicore -->
+        <article class="job">
+          <div class="logo" style="background:#6d28d9;color:#6d28d9"><span style="color:#fff">LU</span></div>
+          <div class="card">
+            <div class="job-h">
+              <div><h3>PT Lumicore Sinergi Awan</h3><p class="sub">Artificial Intelligence Engineer · Full-time · Jakarta Raya · Hybrid</p></div>
+              <span class="when">May 2026 – Present · 7 months</span>
+            </div>
+            <ul class="b">
+              <li>Deployed to TMMIN as AI Engineer (same engagement as the TMMIN role above): designed and implemented AI/ML solutions including Local AI, Computer Vision, and RAG systems.</li>
+              <li>Bridged business requirements with technical solutions and coordinated stakeholders for project delivery.</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- IDSpeaker -->
+        <article class="job">
+          <div class="logo" style="background:#ea580c;color:#ea580c"><span style="color:#fff">ID</span></div>
+          <div class="card">
+            <div class="job-h">
+              <div><h3>IDSpeaker</h3><p class="sub">AI Education Product · 500+ Target Speakers Pipeline, 5–10 Real Speakers</p></div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap"><span class="badge amber">PRODUCT LEADERSHIP</span><span class="badge">10 months total</span></div>
+            </div>
+            <div class="role-blk">
+              <div class="role-h"><b>Product Manager · Full-time</b><span class="when">May 2026 – Present · 7 months</span></div>
+              <ul class="b">
+                <li>Leading engineers: sprint planning, backlog prioritization, technical feasibility, and shipping velocity for AI training product.</li>
+                <li>Product development: roadmap, PRD, user journeys for speaker acquisition and training delivery.</li>
+                <li>Material ownership: curriculum design, training scheme, assessment rubric for AI learners.</li>
+                <li>Client-facing: chat handling, proposal writing, partnership negotiations, and training scheme presentation to corporate clients.</li>
+              </ul>
+            </div>
+            <div class="role-blk alt">
+              <div class="role-h"><b>AI Instructor · Freelance (Trainer AI)</b><span class="when">Jan 2026 – Present · 11 months</span></div>
+              <ul class="b"><li>Delivering hands-on AI training, workshops, and mentoring for corporate and community cohorts.</li></ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- CoE AILO -->
+        <article class="job">
+          <div class="logo" style="background:#2563eb;color:#2563eb"><span style="color:#fff">AI</span></div>
+          <div class="card">
+            <div class="job-h">
+              <div><h3>CoE AILO Telkom University — AI Research Center</h3><p class="sub">Bandung</p></div>
+              <span class="when">2 years 5 months</span>
+            </div>
+            <div class="role-blk">
+              <div class="role-h"><b>Research Assistant in R&amp;D Division · Part-time</b><span class="when">Apr 2024 – Apr 2026 · 2y 1m</span></div>
+              <ul class="b">
+                <li>Applied research in computer vision and machine learning, publication support, and prototype development; first-author paper “Application of Large Language Models for Detecting Fraud and Phishing Messages Indonesian Language” at ICoSEIT 2025 (IEEE).</li>
+                <li>Steering Committee, Webinar “How It Works?: Computer Vision” — Aug 2024 — event design, speaker curation, audience engagement.</li>
+              </ul>
+            </div>
+            <div class="role-blk alt">
+              <div class="role-h"><b>Probation Member — AI Research Center</b><span class="when">Dec 2023 – Apr 2024</span></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Telkom TA -->
+        <article class="job">
+          <div class="logo" style="background:#b91c1c;color:#b91c1c"><span style="color:#fff">TU</span></div>
+          <div class="card">
+            <div class="job-h"><div><h3>Universitas Telkom — Teaching Assistant</h3><p class="sub">Part-time · Remote</p></div></div>
+            <div class="grid2" style="margin-top:14px">
+              <div class="mini" style="box-shadow:none"><h4>TA for Machine Learning</h4><p class="sub">Feb 2025 – Jul 2025</p><p>Mentored 50 students on model training, evaluation, TensorFlow workflows, and project clinics, answering 30+ questions daily; evaluated 26 presentation projects.</p></div>
+              <div class="mini" style="box-shadow:none"><h4>TA for ICT Project Management</h4><p class="sub">Oct 2024 – Feb 2025</p><p>Facilitated agile practices, stakeholder communication, and documentation standards; mentored 25 students in 6 project groups and evaluated 15 project assignments.</p></div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Earlier roles -->
+        <div>
+          <div class="sec-h" style="margin:6px 0 14px"><h2 style="font-size:19px">Earlier career</h2></div>
+          <div class="earlier">
+            <div class="mini"><h4>Enigma Camp — Golang BackEnd Trainee · Contract</h4><p class="sub">Sep 2024 – May 2025 · 9 months</p><p>Intensive backend engineering: Go, REST APIs, database design, testing, and production deployment practices.</p></div>
+            <div class="mini"><h4>Bangkit Academy — Machine Learning Cohort</h4><p class="sub">Led by Google, Tokopedia, Gojek, Traveloka · Feb 2023 – Jul 2023</p><p>Selected ML cohort; built end-to-end ML projects, TensorFlow specialization, and soft-skill leadership training.</p></div>
+            <div class="mini"><h4>Blibli.com — Retail Customer Service · Contract</h4><p class="sub">Aug 2023 – Sep 2023</p></div>
+            <div class="mini"><h4>Telkom University — Speaker Assistant</h4><p class="sub">Nov 2022 – Dec 2022</p></div>
+            <div class="mini wide"><h4>PT Swakarya Insan Mandiri (SIMGROUP) — Customer Service Staff</h4><p class="sub">Feb 2022 – Mar 2022</p></div>
+
+            <div class="mini foundation">
+              <div class="job-h">
+                <div><h4>Nurse (Tenjinkai) — Okayama Prefecture, Japan</h4><p class="sub">Contract · Medication care for 80 patients daily · Nov 2017 – Mar 2021 · 3y 5m</p></div>
+                <span class="badge green">CAREER FOUNDATION</span>
+              </div>
+              <ul class="b">
+                <li>Administered medication for 80 patients daily and reported changes in patient condition, ensuring safety and documentation precision.</li>
+                <li>Developed systems discipline, crisis management, and empathetic leadership — directly transferable to engineering team leadership and product reliability.</li>
+                <li>Worked entirely in Japanese in a Japanese healthcare facility; employment certificate (在職証明書) available on request.</li>
+              </ul>
+            </div>
+            <div class="mini wide"><h4>Yayasan Bina Mandiri Asean — Gakusei Japanese Language Training</h4><p class="sub">Dec 2016 – Oct 2017</p><p>Intensive Japanese language and cultural training — foundation for nursing career in Japan and cross-cultural communication.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS & AWARDS ============ -->
+    <section class="sec" id="projects">
+      <div class="sec-h"><span class="n">03</span><h2>Projects &amp; Awards</h2></div>
+      <div class="grid2">
+        <div class="card proj"><h4><i></i>Cardify</h4><p class="where">Telkom University</p><p>Web-based flashcard generation platform integrated with AI, developed by my team.</p><div class="tags"><span>Web</span><span>AI</span></div></div>
+        <div class="card proj"><h4><i></i>Pijar</h4><p class="where">Enigma Camp</p><p>Application developed by my team using the Go programming language, integrated with a large language model (DeepSeek) and PostgreSQL.</p><div class="tags"><span>Go</span><span>LLM · DeepSeek</span><span>PostgreSQL</span></div></div>
+        <div class="card proj"><h4><i></i>SIPAM</h4><p class="where">Telkom University</p><p>Web interface to manage products and a customer mobile interface to place orders and check queues, developed by my team.</p><div class="tags"><span>Web</span><span>Mobile</span></div></div>
+        <div class="card proj"><h4><i></i>NUTRIPLAN</h4><p class="where">Bangkit Academy</p><p>Android application using machine learning for daily nutritional intake recommendations, potentially increasing user adherence to healthy eating by 75%.</p><div class="tags"><span>Android</span><span>Machine Learning</span></div></div>
+        <div class="card proj"><h4><i></i>SIMA</h4><p class="where">Telkom University</p><p>Web-based digital library with a machine-learning-based recommendation system, aiming to improve book discovery by 80%.</p><div class="tags"><span>Web</span><span>Recommender · ML</span></div></div>
+      </div>
+      <div class="card award"><div class="ic"><svg class="i"><use href="#i-award"/></svg></div><div><b>2nd Runner-up — Statistics Competition</b><span>Semarang City</span></div></div>
+    </section>
+
+    <!-- ============ PUBLICATION ============ -->
+    <section class="sec" id="publication">
+      <div class="sec-h"><span class="n">04</span><h2>Publication</h2></div>
+      <div class="pub">
+        <div class="kicker"><svg class="i"><use href="#i-spark"/></svg>First-author · IEEE Xplore</div>
+        <h3>Application of Large Language Models for Detecting Fraud and Phishing Messages Indonesian Language</h3>
+        <p class="meta"><b>Indriana Noviyanti</b>, Satria Akbar Mugitama, Dhika Rizki Anbiya<br>2025 3rd International Conference on Software Engineering and Information Technology (ICoSEIT) · Bandung · 8–9 October 2025 · IEEE</p>
+        <div class="metrics">
+          <div class="metric"><b>83%</b><span>Accuracy of the best prompting design (CoT + Few-Shot)</span></div>
+          <div class="metric"><b>87%</b><span>Claude-3.7-Sonnet — highest overall score on all metrics</span></div>
+          <div class="metric"><b>86% / 97%</b><span>IndoBERT accuracy / precision — still competitive</span></div>
+        </div>
+        <p class="abs">Evaluated eight LLM variants and IndoBERT on manually curated Indonesian scam messages using Chain-of-Thought and Few-Shot prompting, addressing the gap in Indonesian-language fraud and phishing detection.</p>
+        <div class="links">
+          <a class="btn btn-light" href="https://ieeexplore.ieee.org/abstract/document/11290863/" target="_blank" rel="noopener">View on IEEE Xplore<svg class="i"><use href="#i-link"/></svg></a>
+          <span class="doi">DOI 10.1109/ICoSEIT67010.2025.11290863</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside>
+    <div class="card">
+      <h3 class="t"><svg class="i"><use href="#i-spark"/></svg>Current focus</h3>
+      <div class="focus">
+        <div><span class="ic"><svg class="i"><use href="#i-brief"/></svg></span><p><b>Team Lead – System Engineering</b> at Toyota Motor Manufacturing Indonesia (FID-TMMIN coordination)</p></div>
+        <div><span class="ic"><svg class="i"><use href="#i-layers"/></svg></span><p><b>AI Engineer</b> at PT Lumicore Sinergi Awan + <b>Product Manager</b> at IDSpeaker.com</p></div>
+      </div>
+    </div>
+
+    <section class="card" id="education">
+      <h3 class="t"><svg class="i"><use href="#i-cap"/></svg>Education</h3>
+      <div class="edu">
+        <h4>Universitas Telkom — Bachelor of Informatics (S.Kom)</h4>
+        <div class="sub"><span class="badge green">CUM LAUDE</span><span>GPA 3.59 / 4.00</span><span>Sep 2020 – Aug 2025</span></div>
+        <p>Focus: Artificial Intelligence, Machine Learning, System Engineering, Product Development. Thesis and research activity through CoE AILO AI Research Center. First-author paper at ICoSEIT 2025 (IEEE) on LLM-based fraud and phishing detection in Indonesian.</p>
+      </div>
+      <div class="edu">
+        <h4>Akper Pemerintah Provinsi Jawa Tengah — Associate Degree Nursing (A.Md.Kep)</h4>
+        <div class="sub"><span class="badge green">CUM LAUDE</span><span>2013 – 2016</span></div>
+        <p>Clinical foundation, patient safety systems, and healthcare operations — pivot point to technology.</p>
+      </div>
+    </section>
+
+    <div class="card">
+      <h3 class="t"><svg class="i"><use href="#i-award"/></svg>Licenses &amp; Certifications</h3>
+      <div class="cert hl"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>Certificate of completion: Claude 101</b><small>Anthropic · Aug 2026</small></div></div>
+      <div class="cert hl"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>Certified Artificial Intelligence Manager</b><small>ESAS Management · Jul 2026</small></div></div>
+      <div class="cert"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>TensorFlow: Data and Deployment</b><small>DeepLearning.AI · ID 64RBYT99CQBP</small></div></div>
+      <div class="cert"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>DeepLearning.AI TensorFlow Developer</b><small>DeepLearning.AI · ID ZDCD274KYUFR</small></div></div>
+      <div class="cert"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>Machine Learning — Stanford</b><small>DeepLearning.AI / Stanford · ID 98N9JBXVN4AU</small></div></div>
+      <div class="cert"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>Google Finance Data Analyst Professional Certificate</b><small>Google · ID 3KABT9TKC33S</small></div></div>
+      <div class="cert"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>Google Data Analysis with R Programming</b><small>Google · ID 2KUULTEU9WC3</small></div></div>
+      <div class="cert"><span class="ic"><svg class="i"><use href="#i-award"/></svg></span><div><b>Google Data Analytics Capstone: Complete a Case Study</b><small>Google · ID THXF KCGKARY4</small></div></div>
+      <div class="more"><b>13 more</b> on LinkedIn — Data Analytics, Cloud, Product, AI Training. <a href="https://www.linkedin.com/in/indriana-noviyanti/" target="_blank" rel="noopener">View LinkedIn ↗</a></div>
+    </div>
+
+    <section class="card" id="skills">
+      <h3 class="t"><svg class="i"><use href="#i-layers"/></svg>Skills</h3>
+      <div class="skgroup"><h5>AI &amp; LLM Leadership</h5><div class="sk"><span class="hot">LLM</span><span class="hot">Generative AI</span><span>Claude 101</span><span>TensorFlow</span><span>Machine Learning</span><span class="hot">Computer Vision</span><span>Data and Deployment</span><span>R Programming</span></div></div>
+      <div class="skgroup"><h5>Engineering &amp; Product</h5><div class="sk"><span class="hot">System Engineering</span><span class="hot">Product Management</span><span>Product Development</span><span>Project Management</span><span>Golang Backend</span><span>IT Project Manager</span><span>System Design</span></div></div>
+      <div class="skgroup"><h5>Managerial &amp; Training</h5><div class="sk"><span class="hot">Team Lead (5-Member Team)</span><span>FID-TMMIN Coordination</span><span>Corporate Training</span><span>AI Instructor</span><span>Teaching Assistant</span><span>Proposal &amp; Client Chat</span><span>Training Scheme Design</span></div></div>
+      <div class="skgroup"><h5>Languages &amp; Service</h5><div class="sk"><span>Japanese</span><span>Customer Service Excellence</span><span>Nursing Care (80 patients daily)</span><span>Cross-cultural Communication</span><span>Stakeholder Management</span></div></div>
+    </section>
+
+    <div class="card contact">
+      <h3 class="t"><svg class="i"><use href="#i-mail"/></svg>Contact</h3>
+      <div class="nm serif">Indriana Noviyanti</div>
+      <div class="rl">Team Lead – AI Engineer</div>
+      <ul>
+        <li><svg class="i"><use href="#i-pin"/></svg>Jakarta, Indonesia</li>
+        <li><svg class="i"><use href="#i-mail"/></svg><a href="mailto:indriananoviyanti672@gmail.com">indriananoviyanti672@gmail.com</a></li>
+        <li><svg class="i"><use href="#i-in"/></svg><a href="https://www.linkedin.com/in/indriana-noviyanti/" target="_blank" rel="noopener">linkedin.com/in/indriana-noviyanti</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3 class="t"><svg class="i"><use href="#i-spark"/></svg>Career arc</h3>
+      <div class="steps"><span>Nurse · Japan</span><span>Customer Service</span><span>Bangkit ML</span><span>AILO Research</span><span>Teaching Assistant</span><span>Backend Trainee</span><span class="end">AI Team Lead</span></div>
+      <p class="arc">From <b>Nurse in Japan (2017–2021)</b> to <b>AI Team Lead at Toyota &amp; Product Manager at IDSpeaker</b>. Proof that disciplined career pivots compound into leadership.</p>
+    </div>
+  </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Indriana Noviyanti — AI Engineer Team Lead · Jakarta · English CV, comprehensive edition</span>
+    <span class="open"><span class="dot"></span>Open to Team Lead / AI Product Leadership</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.nav a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+  if(!('IntersectionObserver' in window))return;
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){links.forEach(function(a){a.classList.remove('on')});var a=map[e.target.id];if(a)a.classList.add('on');}
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});
+})();
+</script>
+</body>
+</html>
